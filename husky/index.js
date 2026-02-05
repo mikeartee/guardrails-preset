@@ -2,15 +2,12 @@ const { packageJson, install } = require('mrm-core');
 const fs = require('fs');
 const path = require('path');
 
-function task(config) {
-  const { lintStagedRules } = config
-    .defaults({
-      lintStagedRules: {
-        '*.{js,ts,tsx}': ['eslint --fix', 'prettier --write'],
-        '*.{json,md,yml,yaml}': ['prettier --write']
-      }
-    })
-    .values();
+function task() {
+  // Default lint-staged rules
+  const lintStagedRules = {
+    '*.{js,ts,tsx}': ['eslint --fix', 'prettier --write'],
+    '*.{json,md,yml,yaml}': ['prettier --write']
+  };
 
   // Install dependencies
   install(['husky', 'lint-staged']);

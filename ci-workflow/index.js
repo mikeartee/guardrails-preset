@@ -1,15 +1,12 @@
 const { yaml, makeDirs } = require('mrm-core');
 
-function task(config) {
-  const { nodeVersion, runTests, runLint, runBuild, branches } = config
-    .defaults({
-      nodeVersion: '20',
-      runTests: true,
-      runLint: true,
-      runBuild: true,
-      branches: ['main', 'master']
-    })
-    .values();
+function task() {
+  // Default configuration
+  const nodeVersion = '20';
+  const runTests = true;
+  const runLint = true;
+  const runBuild = true;
+  const branches = ['main', 'master'];
 
   // Create .github/workflows directory
   makeDirs('.github/workflows');
