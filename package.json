@@ -1,5 +1,5 @@
 {
-  "name": "@mikert/guardrails",
+  "name": "@mikert/mrm-preset-guardrails",
   "version": "1.0.0",
   "description": "Mrm preset for project guardrails - CI workflows, Husky, and lint-staged",
   "main": "config.json",

@@ -1,4 +1,4 @@
-# @mikert/guardrails
+# @mikert/mrm-preset-guardrails
 
 Mrm preset for project guardrails - sets up CI workflows, Husky pre-commit hooks, and lint-staged.
 
