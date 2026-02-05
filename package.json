@@ -1,0 +1,30 @@
+{
+  "name": "@mikert/guardrails",
+  "version": "1.0.0",
+  "description": "Mrm preset for project guardrails - CI workflows, Husky, and lint-staged",
+  "main": "config.json",
+  "files": [
+    "config.json",
+    "husky",
+    "ci-workflow"
+  ],
+  "keywords": [
+    "mrm",
+    "mrm-preset",
+    "mrm-task",
+    "husky",
+    "lint-staged",
+    "ci",
+    "github-actions",
+    "guardrails"
+  ],
+  "author": "mikeartee",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeartee/guardrails-preset.git"
+  },
+  "peerDependencies": {
+    "mrm": ">=4.0.0"
+  }
+}

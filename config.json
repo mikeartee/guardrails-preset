@@ -1,0 +1,15 @@
+{
+  "husky": {
+    "lintStagedRules": {
+      "*.{js,ts,tsx}": ["eslint --fix", "prettier --write"],
+      "*.{json,md,yml,yaml}": ["prettier --write"]
+    }
+  },
+  "ciWorkflow": {
+    "nodeVersion": "20",
+    "runTests": true,
+    "runLint": true,
+    "runBuild": true,
+    "branches": ["main", "master"]
+  }
+}
